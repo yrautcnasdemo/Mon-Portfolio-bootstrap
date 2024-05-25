@@ -1,0 +1,49 @@
+#intro {
+    min-height: 100vh;
+    background-image: url(/images/fontdev_BackToTheFuture02.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+}
+
+.text-presentation {
+    background-color: #0c0c0cae;
+    margin-top: -100px;
+}
+
+.description {
+    max-width: 500px;
+    margin: 15px auto;
+    font-size: 16px;
+}
+
+.text-bienvenue {
+    font-size: 22px;
+}
+
+.title-intro {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#mouseBtn i {
+    font-size: 40px;
+    position: absolute;
+    bottom: 30px;
+    transform: translate(-50%, -50%) rotate(180deg);
+    transition: 0.5s;
+    color: white;
+}
+
+#mouseBtn i:hover {
+
+    bottom: 30px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    cursor: pointer;
+    color: rgb(39, 85, 172);
+}
+
+.cat {
+    max-width: 100%;
+}
