@@ -1,3 +1,4 @@
+/*CSS START INTRO*/
 #intro {
     min-height: 100vh;
     background-image: url(/images/fontdev_BackToTheFuture02.jpg);
@@ -43,6 +44,10 @@
     cursor: pointer;
     color: rgb(39, 85, 172);
 }
+/*CSS END INTRO*/
+
+
+
 
 .cat {
     max-width: 100%;
