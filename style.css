@@ -52,3 +52,18 @@
 .cat {
     max-width: 100%;
 }
+.introduce {
+    font-size: 20px;
+}
+.introduced {
+    font-weight: bold;
+    font-size: 22px
+}
+
+
+/*MY SKILLS*/
+.Cards-skill .card-img-top {
+    max-height: 150px;
+    max-width: 150px;
+    margin: auto;
+}
