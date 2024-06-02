@@ -1,4 +1,4 @@
-/*CSS START INTRO*/
+/*START INTRO*/
 #intro {
     min-height: 100vh;
     background-image: url(/images/fontdev_BackToTheFuture02.jpg);
@@ -44,11 +44,18 @@
     cursor: pointer;
     color: rgb(39, 85, 172);
 }
-/*CSS END INTRO*/
+/*END INTRO*/
 
 
 
 
+/*START ABOUT ME*/
+#aboutMe{
+    background-color: #2e3135;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
 .cat {
     max-width: 100%;
 }
@@ -60,8 +67,16 @@
     font-size: 22px
 }
 
+/*END ABOUT ME*/
+
+
+
 
 /*MY SKILLS*/
+.gutter-off {
+    --bs-gutter-x: 0;
+}
+
 .Cards-skill .card-img-top {
     max-height: 150px;
     max-width: 150px;

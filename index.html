@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="/style.css">
         <title>G.DeMeyer - Portfolio</title>
     </head>
+    
     <body class="bg-dark text-light">
 
     <!-- START HEADER -->
@@ -37,10 +38,11 @@
     <!-- END HEADER -->
 
 
-    <main class="container-fluid">
+    <main>
 
         <!-- START CONTAINER INTRO -->
-        <section class="row row-cols-1" id="intro">
+    <section class="container-fluid">
+        <div class="row row-cols-1" id="intro">
             <div class="d-flex align-items-center justify-content-center flex-column text-presentation text-center">
                 <p class="text-bienvenue">Bienvenue !</p>
                 <h1 class="title-intro">Je suis Développeur</h1>
@@ -52,48 +54,56 @@
                     <a href="#aboutMe"><i class="bi bi-mouse"></i></a> 
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
         <!-- END CONTAINER INTRO -->
 
 
 
         <!-- START ABOUT ME -->
-        <section class="container">
-            <figure class="mt-5 mb-5 row row-cols-1 row-cols-md-2 align-items-center pt-5 pb-5" id="aboutMe">
-                <figcaption>
-                    <img src="/images/fontdev_astronaut-cat.jpg" class="cat img-thumbnail" alt="imgprofil">
-                </figcaption>
-                <div class="pt-2 pb-2">
-                    <h2>Qui suis-je ?</h2>
-                    <p class="introduce">Bonjour, je suis <span class="text-danger introduced">Guilain De Meyer.</span></p>
-                    <p>Étudiant en développement web et web mobile, j'attache une grande importance à la création de sites web clairs, 
-                        intuitifs et attrayants, afin d'offrir la meilleure expérience utilisateur possible.
-                        
-                        Je mets l'accent sur la création de sites web qui répondent aux besoins de mes clients, tout en m'efforçant de les 
-                        surpasser en termes de fonctionnalité, d'esthétique et de performance. Je suis convaincu qu'un bon site web doit 
-                        être le fruit d'un équilibre parfait entre le front-end et le back-end.
-                    </p>
-                    <div>
-                        <button class="me-2 btn-social-share btn btn-outline-primary"><i class="bi bi-linkedin"></i></button> <!-- "me-2" = Margin de 2 pour l'élement suivant -->
-                        <button class="me-2 btn-social-share btn btn-outline-primary"><i class="bi bi-github"></i></button>
-                        <button class="me-2 btn-social-share btn btn-outline-primary"><i class="bi bi-discord"></i></button>
-                        <button class="me-2 btn-social-share btn btn-outline-primary"><i class="bi bi-facebook"></i></button>
-                        <a href="https://www.instagram.com/ahegao_beauty/?hl=fr" target="_blank"><button class="me-2 btn-social-share btn btn-outline-primary"><i class="bi bi-instagram"></i></button></a>
+        <section id="aboutMe">
+            <div class="container">
+                <figure class=" row row-cols-1 row-cols-md-2 align-items-center ">
+                    <figcaption>
+                        <img src="/images/fontdev_astronaut-cat.jpg" class="cat img-thumbnail" alt="imgprofil">
+                    </figcaption>
+                    <div class="pt-2 pb-2">
+                        <h2>Qui suis-je ?</h2>
+                        <p class="introduce">Bonjour, je suis <span class="text-danger introduced">Guilain De Meyer.</span></p>
+                        <p>Étudiant en développement web et web mobile, j'attache une grande importance à la création de sites web clairs, 
+                            intuitifs et attrayants, afin d'offrir la meilleure expérience utilisateur possible.
+                            
+                            Je mets l'accent sur la création de sites web qui répondent aux besoins de mes clients, tout en m'efforçant de les 
+                            surpasser en termes de fonctionnalité, d'esthétique et de performance. Je suis convaincu qu'un bon site web doit 
+                            être le fruit d'un équilibre parfait entre le front-end et le back-end.
+                        </p>
+                        <div>
+                            <button class="me-2 btn-social-share btn btn-outline-primary"><i class="bi bi-linkedin"></i></button> <!-- "me-2" = Margin de 2 pour l'élement suivant -->
+                            <button class="me-2 btn-social-share btn btn-outline-primary"><i class="bi bi-github"></i></button>
+                            <button class="me-2 btn-social-share btn btn-outline-primary"><i class="bi bi-discord"></i></button>
+                            <button class="me-2 btn-social-share btn btn-outline-primary"><i class="bi bi-facebook"></i></button>
+                            <a href="https://www.instagram.com/ahegao_beauty/?hl=fr" target="_blank"><button class="me-2 btn-social-share btn btn-outline-primary"><i class="bi bi-instagram"></i></button></a>
+                        </div>
                     </div>
-                </div>
-            </figure>
-        
+                </figure>
+            </div>
+        </section>
         <!-- END ABOUT ME -->
 
 
 
+
         <!-- START MY SKILLS -->
-            <article class="mt-5 mb-5 row text-center">
+        <section class="container-fluid">
+            <div class="mt-5 mb-5 row text-center">
                 <h2>Mes compétences</h2>
                 <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, doloremque animi! Labore fugit ullam esse porro aperiam molestiae vel vitae ad deserunt nam at, voluptatum tempora tempore asperiores beatae aliquid!
                 Expedita ipsum omnis esse provident impedit velit similique, illo nostrum explicabo cumque eaque aspernatur corporis magni id libero. Tempore perspiciatis molestiae, dolore blanditiis fuga incidunt deserunt fugit. Possimus, ducimus voluptate?
                 Repellat!</p>
-                <div class="mt-4 row row-cols-1 row-cols-sm-2 row-cols-md-3 Cards-skill">
+                <div class="mt-4 row row-cols-1 row-cols-sm-2 row-cols-md-3 Cards-skill gutter-off"> 
+                    <!-- la class "gutter-off" me permet de mieux centrer les cards car "gutter" est une sous class de "row" directement 
+                        incluse ddans ce dernier qui a tendance a décaler mes elements vers la droite, c'est pourquoi, aprés avoir détecter
+                        le probleme dans l'inspecteur, j'ai cut gutter dans mon CSS avec "--bs-gutter-x: 0;"-->
                     <div class="p-3">
                         <div class="card bg-dark p-3 border-light">
                             <img src="/images/logo/html.png" class="card-img-top" alt="...">
@@ -161,10 +171,13 @@
                         </div>
                     </div>             
                 </div>
-            </article>
+            </div>
         </section>
         <!-- END MY SKILLS -->
 
+
+
+        
     </main>
 
 
