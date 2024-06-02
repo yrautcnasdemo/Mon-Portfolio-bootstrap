@@ -12,25 +12,33 @@
         <title>G.DeMeyer - Portfolio</title>
     </head>
     
-    <body class="bg-dark text-light">
+    <body class="bg-dark text-light" data-bs-spy="scroll" data-bs-target="#navbar-site" data-bs-smooth-scroll="true" tabindex="0">
+        <!-- les data et le tabindex dans le body servent pour le scrollspy -->
+
+
 
     <!-- START HEADER -->
     <header>
-        <nav class="position-fixed navbar navbar-expand-lg navbar-dark bg-transparent">
+        <nav  id="navbar-site" class="position-fixed navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="/images/logo/Cat.png" alt="" width="50" height="auto">
+                    <img src="/images/logo/Cat.png" alt="cat-Logo" width="50" height="auto">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">Pricing</a>
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </div>
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutMe">Qui suis-je ?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mySkills">Compétences</a>
+                        </li>
+                    </ul>
             </div>
             </div>
         </nav>
@@ -60,125 +68,122 @@
 
 
 
-        <!-- START ABOUT ME -->
-        <section id="aboutMe">
-            <div class="container">
-                <figure class=" row row-cols-1 row-cols-md-2 align-items-center ">
-                    <figcaption>
-                        <img src="/images/fontdev_astronaut-cat.jpg" class="cat img-thumbnail" alt="imgprofil">
-                    </figcaption>
-                    <div class="pt-2 pb-2">
-                        <h2>Qui suis-je ?</h2>
-                        <p class="introduce">Bonjour, je suis <span class="text-danger introduced">Guilain De Meyer.</span></p>
-                        <p>Étudiant en développement web et web mobile, j'attache une grande importance à la création de sites web clairs, 
-                            intuitifs et attrayants, afin d'offrir la meilleure expérience utilisateur possible.
-                            
-                            Je mets l'accent sur la création de sites web qui répondent aux besoins de mes clients, tout en m'efforçant de les 
-                            surpasser en termes de fonctionnalité, d'esthétique et de performance. Je suis convaincu qu'un bon site web doit 
-                            être le fruit d'un équilibre parfait entre le front-end et le back-end.
-                        </p>
-                        <div>
-                            <button class="me-2 btn-social-share btn btn-outline-primary"><i class="bi bi-linkedin"></i></button> <!-- "me-2" = Margin de 2 pour l'élement suivant -->
-                            <button class="me-2 btn-social-share btn btn-outline-primary"><i class="bi bi-github"></i></button>
-                            <button class="me-2 btn-social-share btn btn-outline-primary"><i class="bi bi-discord"></i></button>
-                            <button class="me-2 btn-social-share btn btn-outline-primary"><i class="bi bi-facebook"></i></button>
-                            <a href="https://www.instagram.com/ahegao_beauty/?hl=fr" target="_blank"><button class="me-2 btn-social-share btn btn-outline-primary"><i class="bi bi-instagram"></i></button></a>
-                        </div>
+    <!-- START ABOUT ME -->
+    <section id="aboutMe">
+        <div class="container">
+            <figure class=" row row-cols-1 row-cols-md-2 align-items-center ">
+                <figcaption>
+                    <img src="/images/fontdev_astronaut-cat.jpg" class="cat img-thumbnail" alt="imgprofil">
+                </figcaption>
+                <div class="pt-2 pb-2">
+                    <h2>Qui suis-je ?</h2>
+                    <p class="introduce">Bonjour, je suis <span class="text-danger introduced">Guilain De Meyer.</span></p>
+                    <p>Étudiant en développement web et web mobile, j'attache une grande importance à la création de sites web clairs, 
+                        intuitifs et attrayants, afin d'offrir la meilleure expérience utilisateur possible.
+                        
+                        Je mets l'accent sur la création de sites web qui répondent aux besoins de mes clients, tout en m'efforçant de les 
+                        surpasser en termes de fonctionnalité, d'esthétique et de performance. Je suis convaincu qu'un bon site web doit 
+                        être le fruit d'un équilibre parfait entre le front-end et le back-end.
+                    </p>
+                    <div>
+                        <button class="me-2 btn-social-share btn btn-outline-primary"><i class="bi bi-linkedin"></i></button> <!-- "me-2" = Margin de 2 pour l'élement suivant -->
+                        <button class="me-2 btn-social-share btn btn-outline-primary"><i class="bi bi-github"></i></button>
+                        <button class="me-2 btn-social-share btn btn-outline-primary"><i class="bi bi-discord"></i></button>
+                        <button class="me-2 btn-social-share btn btn-outline-primary"><i class="bi bi-facebook"></i></button>
+                        <a href="https://www.instagram.com/ahegao_beauty/?hl=fr" target="_blank"><button class="me-2 btn-social-share btn btn-outline-primary"><i class="bi bi-instagram"></i></button></a>
                     </div>
-                </figure>
-            </div>
-        </section>
-        <!-- END ABOUT ME -->
-
-
-
-
-        <!-- START MY SKILLS -->
-        <section class="container-fluid">
-            <div class="mt-5 mb-5 row text-center">
-                <h2>Mes compétences</h2>
-                <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, doloremque animi! Labore fugit ullam esse porro aperiam molestiae vel vitae ad deserunt nam at, voluptatum tempora tempore asperiores beatae aliquid!
-                Expedita ipsum omnis esse provident impedit velit similique, illo nostrum explicabo cumque eaque aspernatur corporis magni id libero. Tempore perspiciatis molestiae, dolore blanditiis fuga incidunt deserunt fugit. Possimus, ducimus voluptate?
-                Repellat!</p>
-                <div class="mt-4 row row-cols-1 row-cols-sm-2 row-cols-md-3 Cards-skill gutter-off"> 
-                    <!-- la class "gutter-off" me permet de mieux centrer les cards car "gutter" est une sous class de "row" directement 
-                        incluse ddans ce dernier qui a tendance a décaler mes elements vers la droite, c'est pourquoi, aprés avoir détecter
-                        le probleme dans l'inspecteur, j'ai cut gutter dans mon CSS avec "--bs-gutter-x: 0;"-->
-                    <div class="p-3">
-                        <div class="card bg-dark p-3 border-light">
-                            <img src="/images/logo/html.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">HTML</h5>
-                            <span>__________________</span>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="p-3">
-                        <div class="card bg-dark p-3 border-light">
-                            <img src="/images/logo/css.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">CSS</h5>
-                            <span>__________________</span>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                        </div>
-                    </div> 
-                    <div class="p-3">
-                        <div class="card bg-dark p-3 border-light">
-                            <img src="/images/logo/javascript.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">JavaScript</h5>
-                            <span>__________________</span>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                        </div>
-                    </div> 
-                    <div class="p-3">
-                        <div class="card bg-dark p-3 border-light">
-                            <img src="/images/logo/bootstrap-logo.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">BootStrap</h5>
-                            <span>__________________</span>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                        </div>
-                    </div> 
-                    <div class="p-3">
-                        <div class="card bg-dark p-3 border-light">
-                            <img src="/images/logo/php_PNG34.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">PHP</h5>
-                            <span>__________________</span>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                        </div>
-                    </div> 
-                    <div class="p-3">
-                        <div class="card bg-dark p-3 border-light">
-                            <img src="/images/logo/pngwing.com.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">MySQL</h5>
-                            <span>__________________</span>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                        </div>
-                    </div>             
                 </div>
+            </figure>
+        </div>
+    </section>
+    <!-- END ABOUT ME -->
+
+
+
+
+    <!-- START MY SKILLS -->
+    <section class="container-fluid" id="mySkills">
+        <div class="mt-5 mb-5 row text-center">
+            <h2>Mes compétences</h2>
+            <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, doloremque animi! Labore fugit ullam esse porro aperiam molestiae vel vitae ad deserunt nam at, voluptatum tempora tempore asperiores beatae aliquid!
+            Expedita ipsum omnis esse provident impedit velit similique, illo nostrum explicabo cumque eaque aspernatur corporis magni id libero. Tempore perspiciatis molestiae, dolore blanditiis fuga incidunt deserunt fugit. Possimus, ducimus voluptate?
+            Repellat!</p>
+            <div class="mt-4 row row-cols-1 row-cols-sm-2 row-cols-md-3 Cards-skill gutter-off"> 
+                <!-- la class "gutter-off" me permet de mieux centrer les cards car "gutter" est une sous class de "row" directement 
+                    incluse ddans ce dernier qui a tendance a décaler mes elements vers la droite, c'est pourquoi, aprés avoir détecter
+                    le probleme dans l'inspecteur, j'ai cut gutter dans mon CSS avec "--bs-gutter-x: 0;"-->
+                <div class="p-3">
+                    <div class="card bg-dark p-3 border-light">
+                        <img src="/images/logo/html.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML</h5>
+                        <span>__________________</span>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="p-3">
+                    <div class="card bg-dark p-3 border-light">
+                        <img src="/images/logo/css.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">CSS</h5>
+                        <span>__________________</span>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    </div>
+                </div> 
+                <div class="p-3">
+                    <div class="card bg-dark p-3 border-light">
+                        <img src="/images/logo/javascript.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">JavaScript</h5>
+                        <span>__________________</span>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    </div>
+                </div> 
+                <div class="p-3">
+                    <div class="card bg-dark p-3 border-light">
+                        <img src="/images/logo/bootstrap-logo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">BootStrap</h5>
+                        <span>__________________</span>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    </div>
+                </div> 
+                <div class="p-3">
+                    <div class="card bg-dark p-3 border-light">
+                        <img src="/images/logo/php_PNG34.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">PHP</h5>
+                        <span>__________________</span>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    </div>
+                </div> 
+                <div class="p-3">
+                    <div class="card bg-dark p-3 border-light">
+                        <img src="/images/logo/pngwing.com.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">MySQL</h5>
+                        <span>__________________</span>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    </div>
+                </div>             
             </div>
-        </section>
-        <!-- END MY SKILLS -->
+        </div>
+    </section>
+    <!-- END MY SKILLS -->
 
-
-
-        
-    </main>
+</main>
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
