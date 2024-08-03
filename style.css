@@ -1,3 +1,7 @@
+/*START HEADER*/
+header {
+    z-index: 10;
+}
 /*START INTRO*/
 #intro {
     min-height: 100vh;
@@ -81,4 +85,14 @@
     max-height: 150px;
     max-width: 150px;
     margin: auto;
+}
+
+
+
+/*RECRUT ME*/
+#available{
+    background-color: #2e3135;
+}
+#available, h4 {
+    font-weight: bold;
 }
