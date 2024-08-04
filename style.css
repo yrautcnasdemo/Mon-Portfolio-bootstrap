@@ -1,8 +1,10 @@
-/*START HEADER*/
+/*HEADER*/
 header {
     z-index: 10;
 }
-/*START INTRO*/
+
+
+/*INTRO*/
 #intro {
     min-height: 100vh;
     background-image: url(/images/fontdev_BackToTheFuture02.jpg);
@@ -48,12 +50,9 @@ header {
     cursor: pointer;
     color: rgb(39, 85, 172);
 }
-/*END INTRO*/
 
 
-
-
-/*START ABOUT ME*/
+/*ABOUT ME*/
 #aboutMe{
     background-color: #2e3135;
     padding-top: 100px;
@@ -71,27 +70,30 @@ header {
     font-size: 22px
 }
 
-/*END ABOUT ME*/
-
-
-
 
 /*MY SKILLS*/
 .gutter-off {
     --bs-gutter-x: 0;
 }
-
 .Cards-skill .card-img-top {
     max-height: 150px;
     max-width: 150px;
     margin: auto;
 }
+.card{
+    width: 350px;
+}
 
+
+/*MY CREATIONS*/
+#mycreations{
+    background-color: #2e3135;
+}
 
 
 /*RECRUT ME*/
-#available{
-    background-color: #2e3135;
+#contact{
+    max-width: 500px;
 }
 #available, h4 {
     font-weight: bold;
